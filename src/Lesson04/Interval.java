@@ -37,8 +37,7 @@ public class Interval {
 }
 class time{
     public static void main(String[] args){
-        Interval time = new Interval(3,14,54);
-
+        Interval time = new Interval(4600);
     }
 }
 
