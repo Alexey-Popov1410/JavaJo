@@ -1,9 +1,9 @@
 package Lesson04;
 
 public class Interval {
-    int second;
-    int minute;
-    int hour;
+    private int second;
+    private int minute;
+    private int hour;
 
 
      Interval(int hour, int minute, int second){
@@ -37,7 +37,7 @@ public class Interval {
 }
 class time{
     public static void main(String[] args){
-        Interval time = new Interval(1,10,0);
+        Interval time = new Interval(3,14,54);
 
     }
 }
