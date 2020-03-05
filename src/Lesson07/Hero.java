@@ -1,13 +1,18 @@
 package Lesson07;
 
-public class Hero {
+public abstract class Hero {
     private String Name;
 
-    Hero (String Name){
+    public Hero (String Name){
         this.Name = Name;
     }
 
-    public void attackEnemy(){
-        System.out.println("Герой атакует врага");
+    public Hero() {
     }
+
+    public String getName() {
+        return Name;
+    }
+
+    public abstract void attackEnemy();
 }
