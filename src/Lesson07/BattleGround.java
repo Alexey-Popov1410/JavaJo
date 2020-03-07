@@ -8,9 +8,12 @@ public class BattleGround  {
         Hero legalas = new Archer("Легалас");
         gimli.attackEnemy();
         villain.isAlive();
-        gendalf.attackEnemy();
-        villain.isAlive();
-        legalas.attackEnemy();
-        villain.isAlive();
+        if(Enemy.health > 0){
+            gendalf.attackEnemy();
+            villain.isAlive();
+        } if (Enemy.health > 0){
+            legalas.attackEnemy();
+            villain.isAlive();
+        }
     }
 }
