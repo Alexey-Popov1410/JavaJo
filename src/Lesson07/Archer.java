@@ -10,8 +10,8 @@ public class Archer extends Hero {
 
     @Override
     public void attackEnemy() {
-        int damage = 15;
+        int damage = 30;
         System.out.println("Лучник " + Name + " делает выстрел и наносит " + damage + " урона по врагу !");
-        Enemy.takeDamage(15);
+        Enemy.takeDamage(30);
     }
 }

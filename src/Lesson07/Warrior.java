@@ -11,8 +11,8 @@ public class Warrior extends Hero  {
 
     @Override
     public void attackEnemy() {
-        int damage = 10;
+        int damage = 25;
         System.out.println("Воин " + Name + " делает удар секирой и наносит " + damage + " урона врагу !");
-        Enemy.takeDamage(10);
+        Enemy.takeDamage(25);
     }
 }

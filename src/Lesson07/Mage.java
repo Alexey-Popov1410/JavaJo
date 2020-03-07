@@ -10,8 +10,8 @@ public class Mage extends Hero {
 
     @Override
     public void attackEnemy() {
-        int damage = 25;
+        int damage = 45;
         System.out.println("Маг " + Name + " кастует фаербол и наносит " + damage + " урона врагу !");
-        Enemy.takeDamage(25);
+        Enemy.takeDamage(45);
     }
 }
