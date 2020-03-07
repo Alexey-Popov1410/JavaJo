@@ -1,7 +1,7 @@
 package Lesson07;
 
 public class Enemy implements Mortal {
-    private static int health;
+    public static int health;
 
 
     public Enemy (int health){
@@ -17,8 +17,9 @@ public class Enemy implements Mortal {
     }
 
 
-    public static int takeDamage(int damage){
-        return damage;
+    public static void takeDamage(int damage){
+        health = health - damage;
+        System.out.println("У врага осталось " + health + " здоровья.");
     }
 
 

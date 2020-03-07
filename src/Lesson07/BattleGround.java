@@ -7,7 +7,9 @@ public class BattleGround  {
         Hero gendalf = new Mage("Гендальф");
         Hero legalas = new Archer("Легалас");
         gimli.attackEnemy();
+        villain.isAlive();
         gendalf.attackEnemy();
+        villain.isAlive();
         legalas.attackEnemy();
         villain.isAlive();
     }

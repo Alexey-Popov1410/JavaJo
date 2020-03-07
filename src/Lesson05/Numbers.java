@@ -7,6 +7,7 @@ public class Numbers {
     private double secondNumber;
 
 
+
     public  int computing (int firstNumber){
         return firstNumber + firstNumber;
     }
@@ -22,9 +23,13 @@ public class Numbers {
     public double computing (int firstNumber, double secondNumber){
         return  firstNumber / secondNumber;
     }
+
+
+
     public static void main(String[] args) {
         Numbers num = new Numbers();
         System.out.println(num.computing(10));
+
 
         BigDecimal decimal = new BigDecimal(123.4392992);
         BigDecimal resultSum = decimal.add(BigDecimal.valueOf(130));

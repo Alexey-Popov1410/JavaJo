@@ -3,7 +3,7 @@ package Lesson07;
 public abstract class Hero {
     private String Name;
 
-    public Hero (String Name){
+    public Hero (String Name) {
         this.Name = Name;
     }
 
