@@ -3,12 +3,12 @@ package Lesson08;
 public class Main {
     public static void main(String[] args) {
         Figures figure[]
-                = {new Rectangle( 9,9),
-                new Triangle(9, 8, 8),
-                new Circle(9,9),
-                new Trapeze(6, 9, 7),
-                new Parallelogram(9,9),
-                new Rhombus(9,10)
+                = {new Rectangle( 12,9),
+                new Triangle(13, 6, 8),
+                new Circle(11,13),
+                new Trapeze(8, 11, 7),
+                new Parallelogram(7,7),
+                new Rhombus(7,12)
         };
 
         for(Figures fig : figure)
