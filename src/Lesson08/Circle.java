@@ -11,8 +11,8 @@ public class Circle implements Figures {
         this.radius2 = radius1;
     }
     @Override
-    public String getArea(){
-        return  Math.PI * radius1 * radius2 + " - Area";
+    public double getArea(){
+        return  Math.PI * radius1 * radius2;
     }
     @Override
     public String getName() {

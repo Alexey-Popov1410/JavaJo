@@ -10,8 +10,8 @@ public class Rhombus implements Figures {
         this.diagonal2 = diagonal2;
     }
     @Override
-    public String getArea() {
-        return (diagonal * diagonal2)/2 + " - Area";
+    public double getArea() {
+        return (diagonal * diagonal2)/2;
     }
     @Override
     public String getName() {

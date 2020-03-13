@@ -11,8 +11,8 @@ public class Parallelogram implements Figures {
         this.height = height;
     }
     @Override
-    public String getArea() {
-        return side * height + " - Area";
+    public double getArea() {
+        return side * height;
     }
     @Override
     public String getName() {

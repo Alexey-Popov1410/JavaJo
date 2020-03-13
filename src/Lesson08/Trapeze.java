@@ -13,8 +13,8 @@ public class Trapeze implements Figures {
         this.height = height;
     }
     @Override
-    public String getArea() {
-        return (parallelSide_A + parallelSide_B)* height / 2 + " - Area";
+    public double getArea() {
+        return (parallelSide_A + parallelSide_B)* height / 2;
     }
     @Override
     public String getName() {

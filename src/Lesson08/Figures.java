@@ -1,6 +1,6 @@
 package Lesson08;
 
 public interface Figures {
-    public String getArea();
+    public double getArea();
     public String getName();
 }

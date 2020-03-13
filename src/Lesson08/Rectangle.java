@@ -11,8 +11,8 @@ public class Rectangle implements Figures {
         this.height = height;
     }
     @Override
-    public String getArea() {
-        return width * height + " - Area";
+    public double getArea() {
+        return width * height;
     }
     @Override
     public String getName() {

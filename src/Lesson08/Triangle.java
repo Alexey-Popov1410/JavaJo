@@ -11,9 +11,9 @@ public class Triangle implements Figures {
         this.sideC = C;
     }
     @Override
-    public String getArea() {
+    public double getArea() {
         double p = (sideA + sideB + sideC) / 2;
-        return  Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC))+ " - Area";
+        return  Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
     }
     @Override
     public String getName() {

@@ -12,7 +12,7 @@ public class Main {
         };
 
         for(Figures fig : figure)
-            System.out.println("This " + fig.getName()+ " = " + fig.getArea());
+            System.out.println("This " + fig.getName()+ " = " + fig.getArea() + " - Area");
 
         System.out.println(figure[0] instanceof Rectangle);
         System.out.println(figure[1] instanceof Triangle);
