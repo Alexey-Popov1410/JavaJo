@@ -2,15 +2,30 @@ package Lesson13;
 
 public class String1 {
     public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("add String: " + addString());
+        }
+        for (int i = 0; i < 10; i++) {
+            System.out.println("add StringBuilder: " + addStringBuilder());
+        }
+    }
+    private static long addString() {
         String string = "";
-        for (int i = 0; i <= 30; i++){
+        long startTime = System.nanoTime();
+        for (int i = 0; i < 10000; i++) {
             string += 1;
-            System.out.println(string);
         }
+        long endTime = System.nanoTime();
+        return endTime - startTime;
+    }
+
+    private static long addStringBuilder() {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i <= 30 ; i++) {
+        long startTime = System.nanoTime();
+        for (int i = 0; i < 10000; i++) {
             sb.append(1);
-            System.out.println(sb);
         }
+        long endTime = System.nanoTime();
+        return endTime - startTime;
     }
 }
