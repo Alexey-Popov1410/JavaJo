@@ -13,30 +13,24 @@ public class Students {
     public void addRandomGrades() {
         ListIterator<Integer> listIterator = listRating.listIterator();
         for (int i = 0; i < 10; i++) {
-            Double d = (Math.random() * 10) + 1;
-            listIterator.add(d.intValue());
+            double d = (Math.random() * 10) + 1;
+            listIterator.add((int) d);
         }
     }
 
     public void removeBadGrades() {
-        ListIterator<Integer> listIterator = listRating.listIterator();
-        while (listIterator.hasNext()) {
-            if (listIterator.next() < 6) {
-                listIterator.remove();
-            }
-        }
+        listRating.removeIf(integer -> integer < 6);
     }
 
     public void printListRating() {
-        ListIterator<Integer> listIterator = listRating.listIterator();
-        while (listIterator.hasNext()) {
-            System.out.println(listIterator.next());
+        for (Integer integer : listRating) {
+            System.out.println(integer);
         }
     }
 
     public Integer getMaxGrade() {
         ListIterator<Integer> listIterator = listRating.listIterator();
-        Integer maxValue = 0;
+        int maxValue = 0;
         while (listIterator.hasNext()) {
             Integer value = listIterator.next();
             if (maxValue < value) {
