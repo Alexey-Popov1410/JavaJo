@@ -4,7 +4,6 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) {
         FileToConsole toConsole = null;
-//        System.out.println(" Введите полный путь к файлу : ");
         try (BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));) {
             toConsole = new FileToConsole("src" + File.separator + "Lesson15" + File.separator + "BinaryFile.txt");
         } catch (IOException e) {
