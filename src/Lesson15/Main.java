@@ -27,10 +27,10 @@ public class Main {
 //        toConsole.maxNumeralInLine();
 
 
-        System.out.println(" Задача_5 ");
-        BinaryFile wf = new BinaryFile("src" + File.separator + "Lesson15" + File.separator + "BinaryFile");
-        wf.writeBinaryData();
-        wf.readBinaryData();
+//        System.out.println(" Задача_5 ");
+//        BinaryFile wf = new BinaryFile("src" + File.separator + "Lesson15" + File.separator + "BinaryFile");
+//        wf.writeBinaryData();
+//        wf.readBinaryData();
 
 
 //        System.out.println(" Задача_6 ");
