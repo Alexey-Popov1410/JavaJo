@@ -13,7 +13,7 @@ public class BinaryFile {
         System.out.println(" Записали числа : ");
         try (DataOutputStream bf = new DataOutputStream(new FileOutputStream(file))) {
             for (int i = 0; i < 20; i++) {
-                double d = (Math.random() * 100) + 128;
+                double d = (Math.random() * 100) + 256;
                 System.out.print((int) d + " ");
                 bf.write((int) d);
             }

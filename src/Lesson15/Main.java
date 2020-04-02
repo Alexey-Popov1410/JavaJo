@@ -4,8 +4,8 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) {
         FileToConsole toConsole = null;
-        try (BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));) {
-            toConsole = new FileToConsole("src" + File.separator + "Lesson15" + File.separator + "BinaryFile.txt");
+        try (BufferedReader bf = new BufferedReader(new InputStreamReader(System.in))) {
+            toConsole = new FileToConsole("src" + File.separator + "Lesson15" + File.separator + "One.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -27,10 +27,10 @@ public class Main {
 //        toConsole.maxNumeralInLine();
 
 
-//        System.out.println(" Задача_5 ");
-//        BinaryFile wf = new BinaryFile("src" + File.separator + "Lesson15" + File.separator + "BinaryFile");
-//        wf.writeBinaryData();
-//        wf.readBinaryData();
+        System.out.println(" Задача_5 ");
+        BinaryFile wf = new BinaryFile("src" + File.separator + "Lesson15" + File.separator + "BinaryFile");
+        wf.writeBinaryData();
+        wf.readBinaryData();
 
 
 //        System.out.println(" Задача_6 ");
