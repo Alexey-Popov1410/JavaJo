@@ -10,8 +10,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(" Задание 1 \n" + " Среднее значение : " + average(Arrays.asList(15, 23, 5, 11, 37, 9)));
 
-        List<String> lest1 = Arrays.asList("ejfcnrkav", "pt69ck2g", "5921", "2pvo2v", "trk49dsp30v", "ew9dj1x04lbe");
-        long line = lest1.stream()
+        List<String> list = Arrays.asList("ejfcnrkav", "pt69ck2g", "5921", "2pvo2v", "trk49dsp30v", "ew9dj1x04lbe");
+        long line = list.stream()
                 .filter(s -> s.length() > 8)
                 .distinct()
                 .count();
