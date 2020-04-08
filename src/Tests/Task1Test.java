@@ -19,7 +19,7 @@ public class Task1Test {
         Assert.assertEquals("25.12.2020", task1.getDate(localDate4));
     }
     @Test(expected = DateTimeException.class)
-    public void dateTimeExceptionTest(){
+    public void dateExceptionTest(){
         Task1 exercise1 = new Task1();
         LocalDate localDate2 = LocalDate.of(2020, 1, 72);
         exercise1.getDate(localDate2);

@@ -21,7 +21,7 @@ public class Task6Test {
         Assert.assertEquals(2664540, task6.getSeconds(localDateTime1, localDateTime2));
     }
     @Test(expected = DateTimeException.class)
-    public void dateTimeExceptionTest(){
+    public void dateExceptionTest(){
         Task6 task6 = new Task6();
         LocalDate localDate = LocalDate.of(2020, -5, 25);
         LocalDate localDate1 = LocalDate.of(2020, 6, 25);
