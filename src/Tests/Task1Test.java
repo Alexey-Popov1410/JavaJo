@@ -21,7 +21,7 @@ public class Task1Test {
     @Test(expected = DateTimeException.class)
     public void dateTimeExceptionTest(){
         Task1 exercise1 = new Task1();
-        LocalDate localDate2 = LocalDate.of(2020, 1, 95);
+        LocalDate localDate2 = LocalDate.of(2020, 1, 72);
         exercise1.getDate(localDate2);
     }
 }

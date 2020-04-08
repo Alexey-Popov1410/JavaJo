@@ -10,8 +10,8 @@ public class Task3Test {
     @Test
     public void getTest(){
         Task3 task3 = new Task3();
-        LocalDate localDate = LocalDate.of(2014, 5, 8);
+        LocalDate localDate = LocalDate.of(2017, 5, 5);
         Assert.assertNotNull(localDate);
-        Assert.assertEquals("08.05.2014", task3.getDate(localDate));
+        Assert.assertEquals("05.05.2017", task3.getDate(localDate));
     }
 }
