@@ -1,5 +1,7 @@
 package Lesson17DateTime;
 
+import org.junit.Test;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -9,7 +11,7 @@ public class Task3 {
         LocalDate localDate = LocalDate.now();
         System.out.println( " Дата : " + task3.getDate(localDate));
     }
-
+    @Test
     public String getDate(LocalDate localDate) {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         return localDate.format(dateTimeFormatter);

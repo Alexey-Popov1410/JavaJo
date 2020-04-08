@@ -1,5 +1,7 @@
 package Lesson17DateTime;
 
+import org.junit.Test;
+
 import java.time.LocalDate;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalAdjuster;
@@ -14,6 +16,7 @@ public class Task8 implements TemporalAdjuster {
     }
 
     @Override
+    @Test
     public Temporal adjustInto(Temporal temporal) {
         if (localDate.getMonthValue() <= 6) {
             return temporal.with(TemporalAdjusters.firstDayOfYear());
