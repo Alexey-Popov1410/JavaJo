@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 public class Task1Test {
     @Test
-    public void getQuantityOfWordsTest(){
+    public void getTest(){
         Task1 task1 = new Task1();
         LocalDate localDate = LocalDate.of(2020, 8, 25);
         Assert.assertEquals("25.08.2020", task1.getDate(localDate));

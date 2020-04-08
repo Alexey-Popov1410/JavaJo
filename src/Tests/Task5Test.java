@@ -8,7 +8,7 @@ import java.time.LocalDate;
 
 public class Task5Test {
     @Test
-    public void getDaysBetweenTest(){
+    public void getBetweenDaysTest(){
         Task5 task5 = new Task5();
         LocalDate localDate = LocalDate.of(2017, 4, 4);
         LocalDate localDate1 = LocalDate.of(2020, 6, 25);

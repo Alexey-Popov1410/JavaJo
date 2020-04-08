@@ -9,14 +9,14 @@ import java.time.format.DateTimeParseException;
 
 public class Task4Test {
     @Test
-    public void getDateTest(){
+    public void getTest(){
         Task4 task4 = new Task4();
         LocalDate localDate = LocalDate.of(2019, 4,23);
         Assert.assertNotNull(localDate);
         Assert.assertEquals(localDate, task4.getDate("23-04-2019"));
     }
     @Test(expected = DateTimeParseException.class)
-    public void dateTimeParseExceptionTest(){
+    public void dateExceptionTest(){
         Task4 task4 = new Task4();
         task4.getDate("23-04/2019");
     }

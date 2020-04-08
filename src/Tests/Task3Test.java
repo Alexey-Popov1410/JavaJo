@@ -8,7 +8,7 @@ import java.time.LocalDate;
 
 public class Task3Test {
     @Test
-    public void getDateTest(){
+    public void getTest(){
         Task3 task3 = new Task3();
         LocalDate localDate = LocalDate.of(2014, 5, 8);
         Assert.assertNotNull(localDate);
