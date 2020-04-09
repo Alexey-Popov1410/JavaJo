@@ -3,7 +3,7 @@ package Lesson21ThreadExecuters;
 public class ArrayMain {
     private static final int MAX_ARRAY_SIZE = 500;
 
-    private static int[] array = randomIntArray();
+    private static final int[] array = randomIntArray();
 
     public static void main(String[] args) {
         SearchUsingThreads searchUsingThreads = new SearchUsingThreads(array);

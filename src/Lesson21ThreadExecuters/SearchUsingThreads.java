@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 
 public class SearchUsingThreads {
     private int[] maxValuesFromThread;
-    private int[] array;
+    private final int[] array;
 
     public SearchUsingThreads(int[] array) {
         this.array = array;
